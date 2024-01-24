@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login Page</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="fa-solid fa-envelope icon"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="fa-solid fa-lock icon"></i>
+                        <i class="fa-solid fa-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logcheck_login"> <!-- Unique ID for login form -->
+                            <label for="logcheck_login" class="text"> Remember me</label>
+                        </div>
+                        <a href="#" class="text">Forgot password </a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login Now">
+                    </div>
+
+                    <div class="login-signup"> <!-- Moved the login-signup div inside the login form -->
+                        <span class="text">Not a member?
+                            <a href="#" class="text signup-link"> signup now</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+
+                    <div class="input-field">
+                        <input type="text" placeholder="phone number" required>
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your emali" required>
+                        <i class="fa-solid fa-envelope icon"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="fa-solid fa-lock icon"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="fa-solid fa-lock icon"></i>
+                        <i class="fa-solid fa-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logcheck">
+                            <label for="logcheck" class="text"> Remember me</label>
+
+
+                        </div>
+                        <a href="#" class="text">Forgot password </a>
+
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login Now">
+                    </div>
+
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text login-link"> signup now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
